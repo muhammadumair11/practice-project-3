@@ -6,6 +6,7 @@
 --font-size: 1.3rem;
 --font-weight: 300;
 --primary-color: #5247D5;
+--light-background-color: #F7F7F8;
 }
 * {
     font-family: Open sans, serif !important;
@@ -79,7 +80,9 @@
 .bg-img h1 {
     color: #ffffff;
     font-size: 4rem;
-    padding: 4rem;
+    margin: 3rem 0;
+    padding: 8rem 4rem;
+    
 }
 
 @media (max-width: 800px) {
@@ -101,12 +104,12 @@
 /* Second section*/
 
 
-.section-heading {
+.section-header {
     padding: 8rem 0 0 0;
     color: black;
 }
 
-.section-heading p {
+.section-header p {
     color: rgb(83, 82, 82);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
@@ -140,9 +143,22 @@
 
     .card {
         border: none;
-        background-color: #F7F7F8;
+        background-color: var(--light-background-color);
         margin-bottom: 2rem;
     }
     /* Cards section end */
 
 /* Second section end */
+
+
+/* Third section */
+.third-section .container-fluid {
+    background-color: var(--light-background-color);
+    display: flex;
+    justify-content: center;
+}
+.third-section-header {
+        width: 50%;
+}
+
+/* Third section end */
