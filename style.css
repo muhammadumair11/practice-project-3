@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+:root {
+    /* card's variable */
+--font-size: 1.3rem;
+--font-weight: 300;
+--primary-color: #5247D5;
+}
+* {
+    font-family: Open sans, serif !important;
+}
+
+/* Navbar */
+.nav-link {
+    color: black !important;
+    padding: 0 2rem !important;
+    height: 100%;
+    font-size: 1.1rem;
+    display: flex !important;
+    align-items: center !important;
+}   
+
+.nav-link:hover {
+    color: #aaa !important;
+}
+.btn-samples {
+    color: white;
+    width: 10rem;
+    border-radius: 0;
+    background-color: var(--primary-color);
+}
+.btn-samples:hover {
+    color: #aaa;
+    
+}
+
+
+
+/* navbar end */
+
+
+
+/* products sub section */
+.nav-link-sub .container {
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-link-sub .container div {
+    display: flex;
+    flex-direction: column;
+}
+.nav-link-sub .container div a {
+    color: black;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.nav-link-sub .container div a:hover {
+    color: #aaa;
+}
+
+/* products sub section end */
+
+
+
+/* First Section  */
+
+
+.bg-img {
+    height: 100vh;
+    background: url(img/First-section-image.jpg) no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.bg-img h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    padding: 4rem;
+}
+
+@media (max-width: 800px) {
+    .bg-img {
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg-img h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* First section end */
+
+
+/* Second section*/
+
+
+.section-heading {
+    padding: 8rem 0 0 0;
+    color: black;
+}
+
+.section-heading p {
+    color: rgb(83, 82, 82);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    padding-bottom: 3rem;
+
+}
+
+    /* Cards section end */
+    .card-text {
+        color: rgb(83, 82, 82);
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+    }
+
+    .learn-more {
+        padding: 2rem 0 0 0;
+       display: flex;
+       justify-content: flex-end;
+    }
+    .btn-learn-more {
+        color: var(--primary-color) !important;
+        border: 1px solid var(--primary-color);
+        transition: all 500ms;
+
+
+    }
+    .btn-learn-more:hover {
+        color: #fff !important;
+        background-color: var(--primary-color);
+    }
+
+    .card {
+        border: none;
+        background-color: #F7F7F8;
+        margin-bottom: 2rem;
+    }
+    /* Cards section end */
+
+/* Second section end */
