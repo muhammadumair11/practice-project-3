@@ -96,7 +96,7 @@
 
 
 .section-header {
-    padding: 8rem 0 0 0;
+    padding: 6rem 0 0 0;
     color: black;
 }
 
@@ -124,12 +124,13 @@
         color: var(--primary-color) !important;
         border: 1px solid var(--primary-color);
         transition: all 500ms;
-
+        position: relative;
 
     }
     .btn-learn-more:hover {
         color: #fff !important;
         background-color: var(--primary-color);
+        transform: scale(1.3);
     }
 
     .card {
@@ -143,16 +144,68 @@
 
 
 /* Third section */
-.third-section .container-fluid {
+.third-section .container-fluid , .third-section-body{
     background-color: var(--light-background-color);
+    padding: 0;
+    margin: 0;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .third-section-header {
-    width: 50%;
+    width: 60%;
+}
+.third-section-body {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.third-section-body img,.fourth-section-header img {
+    width: 90%;
+    max-width: 80%;
+    transition: all 500ms ease-out;
+}
+.third-section-body img:hover {
+    transform: scale(1.1);
+}
+.third-section-button {
+    margin: 5rem 0;
+}
+.third-section-button button {
+    padding: .8rem 2rem;
+}
+
+.section-video {
+    width: 90%;
+    max-width: 80%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+.section-video .text-aside {
+    padding: 6rem;
+}
+.third-section-img, .fourth-section-header {
+    text-align: center;
+}
+.third-section-img img, .fourth-section-header {
+    margin: 3rem 0;
+    width: 100rem;
+    
 }
 
 /* Third section end */
+
+
+/* Fourth section */
+.fourth-section-header {
+    width: 100%;
+}
+.fourth-section-header h1 {
+    padding: 2rem 0 4rem 0;
+}
+
+/* Fourth section end */
 
 
 
@@ -175,4 +228,8 @@
     .section-header p , h1 {
         text-align: left;
     }
+    .section-video .text-aside {
+        padding: 2rem;
+    }
+    
 }
