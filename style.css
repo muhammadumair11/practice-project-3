@@ -67,15 +67,17 @@
 
 /* First Section  */
 
-
 .bg-img {
-    height: 100vh;
     background: url(img/First-section-image.jpg) no-repeat;
+}
+.bg-img-config {
+    height: 100vh;
     background-position-y: bottom;
     background-position-x: right;
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    backface-visibility: hidden;
 }
 .bg-img h1 {
     color: #ffffff;
@@ -186,7 +188,10 @@
     padding: 6rem;
 }
 .third-section-img, .fourth-section-header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .third-section-img img, .fourth-section-header {
     margin: 3rem 0;
@@ -204,8 +209,158 @@
 .fourth-section-header h1 {
     padding: 2rem 0 4rem 0;
 }
+.fourth-section-header .container {
+    margin: 5rem 0;
+    padding: 2rem 0 0 0;
+}
+
+.fourth-section-card h1 {
+    padding: 0 0 2rem 0;
+    
+}
+.fourth-section-card .col-lg-6 .card-title {
+    text-align: left;
+    padding: 2rem 0;
+}
+.fourth-section-card .col-lg-6 .card-text {
+    text-align: left;
+}
+.fourth-section-card-img {
+    text-align: center;
+}
+
+.top-card-text, .bottom-card-text {
+    margin: 0 0 5rem 0;
+}
+
 
 /* Fourth section end */
+
+
+
+/* Fifth section*/
+.bg-img-fifth-section {
+    background-image: url(img/hero3.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth-sec-text {
+    width: 60%;
+    padding: 1rem;
+    margin: 3rem;
+    height: 30%;
+
+}
+
+.btn-learn-more-override {
+    
+    border: 1px solid white;
+    color: white !important;
+    margin: 2rem 0;
+}
+.btn-learn-more-override:hover {
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.443) !important;
+
+}
+
+
+/* Fifth section end */
+
+
+/* Sixth section */
+    .sixth-section {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 6rem 0;
+    }
+    .sixth-section .card-title {
+        width: 60%;
+        color: white;
+
+    }
+
+    .btn-sixth-sec {
+        background-color: #fff;
+        margin: 3rem 0 0 0;
+        transition: all 500ms;
+    }
+    .btn-sixth-sec:hover {
+        transform: scale(1.2);
+        background-color: rgba(255, 255, 255, 0.661);
+        
+    }
+
+/* Sixth section end */
+
+
+
+/* Footer */
+.footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-upper-text {
+    width: 90%;
+    padding: 3rem 0 5rem 0;
+}
+.footer-upper-text img {
+    width: 8rem;
+}
+.footer .container-fluid {
+    display: flex;
+}
+ul {
+    list-style: none
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+.list-header {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+}
+.footer-list ul {
+    padding: 2rem 5rem;
+}
+.footer-list ul li > a{
+    color: white;
+    font-size: .8rem;
+    text-decoration: none;
+}
+.footer-list ul li > a:hover {
+    color: #aaa;
+    
+}
+.side-footer {
+    padding: 2rem 0;
+    color: white;
+}
+
+.side-footer h5 {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+.side-footer p {
+    font-size: .8rem;
+}
+
+
+/* Footer end */
 
 
 
@@ -213,8 +368,8 @@
 /* Media Queries */
 
 @media (max-width: 800px) {
-    .bg-img {
-        height: 50vh;
+    .bg-img-config {
+        height: 50%;
         align-items: center;
         justify-content: center;
     }
@@ -231,5 +386,29 @@
     .section-video .text-aside {
         padding: 2rem;
     }
-    
+    .top-card-text, .bottom-card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fifth-sec-text {
+        width: 80%;
+    }
+    .footer,.footer .container-fluid,.footer-list {
+        display: block;
+    }  
+    .footer-upper-text {
+        text-align: center;
+        padding: 2rem 0;
+        width: 100%;
+    } 
+    .footer-list ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .footer-list ul li {
+        padding: 0 0 0 1rem;
+    }
 }
